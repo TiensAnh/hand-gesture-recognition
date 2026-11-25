@@ -19,7 +19,7 @@ Phụ thuộc: T001
 - [ ] File `.github/workflows/ci.yml` hợp lệ, tự động kích hoạt trên `push` (`main`) và `pull_request` (`main`).
 
 ## Ghi chú
-- Trong CI không có webcam thật và không có màn hình GUI, nên unit test phải test tầng xử lý độc lập hoặc dùng ảnh tổng hợp/mock.
+- **Đã bỏ (2026-11-25):** Không sử dụng CI/CD (GitHub Actions) trong dự án này. Phần cấu hình cục bộ `pyproject.toml` (`ruff` và `pytest`) được chuyển sang `T001`.
 
 ## Kết quả (điền ở commit cuối nhánh task trước khi push/merge)
 - Ngày xong:

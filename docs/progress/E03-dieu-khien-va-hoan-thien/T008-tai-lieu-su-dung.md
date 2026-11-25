@@ -7,7 +7,7 @@ Nhánh: `docs/tai-lieu-su-dung`
 Phụ thuộc: T007
 
 ## Mục tiêu
-- Hoàn thiện `README.md` đầy đủ hướng dẫn cài đặt, chạy ứng dụng, thu thập dữ liệu, huấn luyện mô hình, chạy CI/test và rà soát kiểm thử toàn bộ luồng.
+- Hoàn thiện `README.md` đầy đủ hướng dẫn cài đặt, chạy ứng dụng, thu thập dữ liệu, huấn luyện mô hình, chạy lint/test và rà soát kiểm thử toàn bộ luồng.
 
 ## Phạm vi (lát cắt dọc)
 - Tài liệu: `README.md` mô tả bài toán, kiến trúc module, cấu trúc thư mục, lệnh cài đặt/chạy/huấn luyện/test và danh sách 7 cử chỉ hỗ trợ.

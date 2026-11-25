@@ -12,7 +12,7 @@ Phụ thuộc: T004
 ## Phạm vi (lát cắt dọc)
 - Huấn luyện: chia tập train/test (stratified), huấn luyện MLP, SVM (RBF) và KNN, chọn mô hình có F1/Accuracy tốt nhất.
 - Lưu trữ & Đánh giá: lưu mô hình + danh sách nhãn vào `models/` (`.joblib` + `.json`), xuất bảng chỉ số (accuracy, precision, recall, F1) và ảnh confusion matrix (`matplotlib`).
-- Kiểm thử: unit test chạy pipeline huấn luyện/dự đoán trên dữ liệu giả lập nhỏ để đảm bảo CI luôn kiểm tra được.
+- Kiểm thử: unit test chạy pipeline huấn luyện/dự đoán trên dữ liệu giả lập nhỏ để đảm bảo kiểm thử tự động luôn chạy nhanh.
 
 ## Xong khi (kiểm tra được bằng chạy hoặc test)
 - [ ] Chạy script huấn luyện tạo ra file model trong `models/` và ảnh confusion matrix không lỗi.
