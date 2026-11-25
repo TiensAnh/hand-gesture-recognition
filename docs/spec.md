@@ -14,7 +14,6 @@ Cập nhật: 2026-11-25
   - Nhận diện 7 cử chỉ cơ bản theo thời gian thực qua webcam (`fist`, `open_palm`, `point`, `peace`, `ok`, `thumbs_up`, `rock`), có làm mượt kết quả theo chuỗi frame và hỗ trợ kiểm thử trên ảnh/video có sẵn.
   - Chế độ ứng dụng thực tế điều khiển bằng cử chỉ (điều chỉnh độ sáng/âm lượng, chuyển slide/media theo file cấu hình `.json`, có cooldown chống lặp và công tắc bật/tắt an toàn).
   - Giao diện Desktop bằng `CustomTkinter` hiển thị luồng video, khung xương bàn tay, nhãn cử chỉ, độ tin cậy, FPS và điều khiển chế độ.
-  - Thiết lập CI bằng GitHub Actions tự động chạy lint (`ruff`) và unit test (`pytest`) khi tạo PR hoặc push lên `main`.
 - Ngoài phạm vi (Không làm ở giai đoạn hiện tại):
   - Ứng dụng Web/Mobile, Backend/Frontend tách rời.
   - Cơ sở dữ liệu (Database).
@@ -31,7 +30,7 @@ Cập nhật: 2026-11-25
 ## 4. Công nghệ và kiến trúc
 - Ngôn ngữ / framework: Python 3.x, `opencv-python`, `mediapipe`, `numpy`, `scikit-learn`, `matplotlib`, `customtkinter`.
 - Cơ sở dữ liệu: không có.
-- Công cụ build / lint / test / CI: `venv` + `pip` (`requirements.txt`), `ruff` (lint), `pytest` (unit test), GitHub Actions (`.github/workflows/ci.yml`).
+- Công cụ build / lint / test: `venv` + `pip` (`requirements.txt`), `ruff` (lint), `pytest` (unit test).
 - Kiến trúc: Ứng dụng Desktop đơn khối theo module (tách riêng tiền xử lý OpenCV, trích xuất landmark MediaPipe, huấn luyện/dự đoán ML, điều khiển hành động và giao diện CustomTkinter).
 
 ## 5. Cấu trúc thư mục
@@ -41,7 +40,6 @@ Cập nhật: 2026-11-25
 - `models/`: mô hình phân loại đã huấn luyện và cấu hình nhãn.
 - `scripts/`: script thu thập dữ liệu, huấn luyện và đánh giá mô hình.
 - `tests/`: kiểm thử tự động bằng `pytest`.
-- `.github/workflows/`: cấu hình GitHub Actions CI.
 - `docs/`: tài liệu đặc tả (`spec.md`, `specs/`) và tiến độ (`progress/`).
 
 ## 6. Lệnh chạy
@@ -52,5 +50,5 @@ Cập nhật: 2026-11-25
 - Test: `.venv\Scripts\pytest`
 
 ## 7. Quy ước chung của dự án
-- Code Python theo chuẩn PEP 8 (kiểm tra bằng `ruff`), tách rõ phần xử lý thuật toán (không phụ thuộc GUI/webcam) khỏi lớp giao diện `CustomTkinter` để dễ viết unit test chạy trong CI.
+- Code Python theo chuẩn PEP 8 (kiểm tra bằng `ruff`), tách rõ phần xử lý thuật toán (không phụ thuộc GUI/webcam) khỏi lớp giao diện `CustomTkinter` để dễ viết unit test.
 - Không commit file môi trường ảo (`.venv/`), cache Python (`__pycache__/`) hay video dung lượng lớn vào Git.

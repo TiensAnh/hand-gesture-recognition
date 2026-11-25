@@ -4,7 +4,7 @@ Cập nhật: 2026-11-25
 Epic: E01
 Spec: không có
 Nhánh: `feature/tien-xu-ly-va-ban-tay`
-Phụ thuộc: T002
+Phụ thuộc: T001
 
 ## Mục tiêu
 - Tích hợp bước tiền xử lý OpenCV tùy chọn và phát hiện bàn tay MediaPipe Hands vẽ 21 landmark, phân biệt tay trái/phải, đếm ngón tay và hiển thị FPS realtime trên GUI.
