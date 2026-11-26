@@ -1,6 +1,6 @@
 # Đặc tả tổng dự án (Spec)
 
-Cập nhật: 2026-11-25
+Cập nhật: 2026-11-26
 
 ## 1. Mục tiêu và đối tượng sử dụng
 - Dự án giải quyết bài toán gì: Xây dựng hệ thống Desktop Python nhận diện bàn tay và cử chỉ theo thời gian thực qua webcam (hỗ trợ kiểm thử trên ảnh/video), kết hợp huấn luyện mô hình phân loại trên tọa độ landmark để phục vụ bài tập lớn môn Xử lý ảnh.
@@ -34,7 +34,6 @@ Cập nhật: 2026-11-25
 - Kiến trúc: Ứng dụng Desktop đơn khối theo module (tách riêng tiền xử lý OpenCV, trích xuất landmark MediaPipe, huấn luyện/dự đoán ML, điều khiển hành động và giao diện CustomTkinter).
 
 ## 5. Cấu trúc thư mục
-*(Dự kiến — sẽ cập nhật khi khởi tạo mã nguồn)*
 - `src/`: mã nguồn chính của ứng dụng (xử lý ảnh, nhận diện bàn tay, phân loại cử chỉ, điều khiển, GUI).
 - `data/`: tập dữ liệu tọa độ landmark (`.csv`) và ảnh/video mẫu kiểm thử.
 - `models/`: mô hình phân loại đã huấn luyện và cấu hình nhãn.
@@ -43,7 +42,6 @@ Cập nhật: 2026-11-25
 - `docs/`: tài liệu đặc tả (`spec.md`, `specs/`) và tiến độ (`progress/`).
 
 ## 6. Lệnh chạy
-*(Dự kiến — sẽ cập nhật sau khi tạo `requirements.txt` và `pyproject.toml`)*
 - Cài đặt: `python -m venv .venv` rồi `.venv\Scripts\pip install -r requirements.txt`
 - Chạy dev: `.venv\Scripts\python -m src.main`
 - Lint: `.venv\Scripts\ruff check .`

@@ -1,6 +1,6 @@
 # E01 - Khung ứng dụng & Nhận diện bàn tay realtime
 
-Cập nhật: 2026-11-25
+Cập nhật: 2026-11-26
 Spec: không có
 Ưu tiên: P1
 
@@ -14,7 +14,7 @@ Spec: không có
 ## Danh sách task (theo thứ tự làm)
 Ký hiệu: `[ ]` chưa làm | `[~]` đang làm | `[x]` xong | `[!]` vướng | `[-]` bỏ
 
-- [ ] T001 - Khởi tạo dự án và khung app webcam — `chore/khoi-tao-du-an`
+- [x] T001 - Khởi tạo dự án và khung app webcam — `chore/khoi-tao-du-an`
 - [-] T002 - Thiết lập GitHub Actions CI (lint và test) — `chore/cau-hinh-ci`
 - [ ] T003 - Tiền xử lý OpenCV và nhận diện bàn tay MediaPipe — `feature/tien-xu-ly-va-ban-tay`
 
