@@ -1,0 +1,25 @@
+# Môi trường ảo và cache Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache kiểm thử và linter
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE và hệ điều hành
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Video dung lượng lớn và file tạm
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.log
