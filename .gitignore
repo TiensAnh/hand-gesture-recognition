@@ -23,3 +23,7 @@ Thumbs.db
 *.mov
 *.mkv
 *.log
+
+# File model MediaPipe tải rời
+models/*.task
+models/*.task.tmp

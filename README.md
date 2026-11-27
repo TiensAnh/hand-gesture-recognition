@@ -20,6 +20,12 @@ Nếu cần chạy lint và kiểm thử tự động:
 .\.venv\Scripts\pip install -r requirements-dev.txt
 ```
 
+Tải mô hình nhận diện bàn tay MediaPipe (`models/hand_landmarker.task`, ~7.5 MB):
+
+```powershell
+.\.venv\Scripts\python scripts\download_hand_model.py
+```
+
 ## Chạy ứng dụng
 ```powershell
 .\.venv\Scripts\python -m src.main
@@ -42,6 +48,7 @@ Nếu cần chạy lint và kiểm thử tự động:
 - `src/`: mã nguồn chính của ứng dụng
   - `src/capture/`: quản lý mở, đọc luồng nền và giải phóng camera (`CameraManager`)
   - `src/config/`: cấu hình mặc định và phân tích nguồn camera
+  - `src/vision/`: tiền xử lý OpenCV (lật gương, Gaussian blur, CLAHE) và nhận diện bàn tay MediaPipe (`HandTracker`, đếm ngón tay, FPS)
   - `src/gui/`: giao diện Desktop CustomTkinter
   - `src/main.py`: điểm khởi chạy ứng dụng
 - `data/`: tập dữ liệu landmark (`.csv`) và ảnh/video mẫu kiểm thử
