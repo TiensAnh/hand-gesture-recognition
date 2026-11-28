@@ -38,6 +38,14 @@ Tải mô hình nhận diện bàn tay MediaPipe (`models/hand_landmarker.task`,
   1. Mở app **DroidCam** trên điện thoại (chung Wi-Fi với máy tính). Nếu đang mở DroidCam Client trên Windows thì bấm **Stop** trước.
   2. Nhập URL `http://<WiFi-IP>:4747/video` (ví dụ `http://192.168.1.182:4747/video`) vào ô **Nguồn camera:** rồi bấm **Bật camera**.
 
+## Thu thập dữ liệu cử chỉ (Dataset CSV)
+```powershell
+.\.venv\Scripts\python scripts\collect_data.py --source 0
+# Hoặc dùng DroidCam Wi-Fi:
+.\.venv\Scripts\python scripts\collect_data.py --source http://<WiFi-IP>:4747/video
+```
+Phím tắt trong cửa sổ thu thập: `1`–`7` chọn nhãn cử chỉ, `Space` chụp 1 mẫu, `C` bật/tắt ghi liên tục, `F` bật/tắt lật gương, `Q`/`Esc` để thoát. Dữ liệu được ghi nối tiếp vào `data/gestures.csv`.
+
 ## Kiểm tra chất lượng code
 ```powershell
 .\.venv\Scripts\ruff check .
@@ -49,6 +57,7 @@ Tải mô hình nhận diện bàn tay MediaPipe (`models/hand_landmarker.task`,
   - `src/capture/`: quản lý mở, đọc luồng nền và giải phóng camera (`CameraManager`)
   - `src/config/`: cấu hình mặc định và phân tích nguồn camera
   - `src/vision/`: tiền xử lý OpenCV (lật gương, Gaussian blur, CLAHE) và nhận diện bàn tay MediaPipe (`HandTracker`, đếm ngón tay, FPS)
+  - `src/ml/`: chuẩn hóa vector đặc trưng 42 chiều, đọc/ghi `data/gestures.csv` và điều phối thu thập dữ liệu
   - `src/gui/`: giao diện Desktop CustomTkinter
   - `src/main.py`: điểm khởi chạy ứng dụng
 - `data/`: tập dữ liệu landmark (`.csv`) và ảnh/video mẫu kiểm thử
