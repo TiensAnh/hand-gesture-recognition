@@ -1,6 +1,6 @@
 # T004 - Chuẩn hóa đặc trưng và công cụ thu thập dữ liệu
 
-Cập nhật: 2026-11-25
+Cập nhật: 2026-11-28
 Epic: E02
 Spec: không có
 Nhánh: `feature/thu-thap-du-lieu`
@@ -15,14 +15,14 @@ Phụ thuộc: T003
 - Kiểm thử: unit test kiểm tra tính bất biến tịnh tiến/tỉ lệ của vector đặc trưng và đọc/ghi CSV.
 
 ## Xong khi (kiểm tra được bằng chạy hoặc test)
-- [ ] Thu thập và lưu được mẫu vào `data/gestures.csv` cho các nhãn cử chỉ, hiển thị rõ số mẫu hiện có từng lớp.
-- [ ] Unit test chứng minh vector đặc trưng không đổi khi dịch chuyển hoặc phóng to/thu nhỏ bàn tay.
-- [ ] `ruff check .` và `pytest` đều đạt.
+- [x] Thu thập và lưu được mẫu vào `data/gestures.csv` cho các nhãn cử chỉ, hiển thị rõ số mẫu hiện có từng lớp.
+- [x] Unit test chứng minh vector đặc trưng không đổi khi dịch chuyển hoặc phóng to/thu nhỏ bàn tay.
+- [x] `ruff check .` và `pytest` đều đạt.
 
 ## Ghi chú
 - Đảm bảo không làm mất dữ liệu cũ khi chạy thu thập bổ sung (hỗ trợ ghi nối tiếp).
 
 ## Kết quả (điền ở commit cuối nhánh task trước khi push/merge)
-- Ngày xong:
-- Nhánh / PR chính:
-- Việc phát sinh hoặc còn tồn:
+- Ngày xong: 2026-11-28
+- Nhánh / PR chính: `feature/thu-thap-du-lieu`
+- Việc phát sinh hoặc còn tồn: Đã thu thập 1.467 mẫu hợp lệ cho đủ 7 cử chỉ vào `data/gestures.csv` (vector 42 chiều chuẩn hóa theo cổ tay và max-abs, CSV 43 cột).

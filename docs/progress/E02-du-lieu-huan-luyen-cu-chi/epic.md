@@ -1,6 +1,6 @@
 # E02 - Dữ liệu, Huấn luyện & Nhận diện cử chỉ ML
 
-Cập nhật: 2026-11-25
+Cập nhật: 2026-11-28
 Spec: không có
 Ưu tiên: P1
 
@@ -14,7 +14,7 @@ Spec: không có
 ## Danh sách task (theo thứ tự làm)
 Ký hiệu: `[ ]` chưa làm | `[~]` đang làm | `[x]` xong | `[!]` vướng | `[-]` bỏ
 
-- [ ] T004 - Chuẩn hóa đặc trưng và công cụ thu thập dữ liệu — `feature/thu-thap-du-lieu`
+- [x] T004 - Chuẩn hóa đặc trưng và công cụ thu thập dữ liệu — `feature/thu-thap-du-lieu`
 - [ ] T005 - Huấn luyện và đánh giá mô hình phân loại cử chỉ — `feature/huan-luyen-mo-hinh`
 - [ ] T006 - Tích hợp nhận diện cử chỉ realtime và ảnh/video — `feature/nhan-dien-cu-chi-realtime`
 

@@ -11,6 +11,9 @@ DEFAULT_HAND_MODEL_PATH = (
     Path(__file__).resolve().parents[2] / "models" / "hand_landmarker.task"
 )
 
+# Đường dẫn mặc định tới tập dữ liệu cử chỉ CSV neo theo thư mục gốc dự án
+DEFAULT_DATASET_PATH = Path(__file__).resolve().parents[2] / "data" / "gestures.csv"
+
 
 # Cấu hình mặc định cho cửa sổ ứng dụng, luồng camera và nhận diện bàn tay
 @dataclass(frozen=True)
